@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+
+repository:
+  id: .github
+  type: docs
+
+governance:
+  level: G2
+  target: G3
+  riskTier: T2
+
+extends:
+  - secret-scanning
+
+branching:
+  profile: standard
+  ciProfile: docs
+  branches:
+    stable: main
+    development: dev
+    integration: { enabled: false, pattern: "integration/<version>" }
+    release: { enabled: false, pattern: "release/<version>" }
+    task: { issueRequired: true, patterns: ["<type>/<issue>-<description>"] }
+    hotfix: { pattern: "hotfix/<version>-<description>" }
+
+commit:
+  scopeProfiles:
+    - docs
+  scopes:
+    - profile
+    - readme

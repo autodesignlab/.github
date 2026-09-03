@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: .github
+  title: Organization Public Profile
+  description: Public organization profile page and website directory
+  annotations:
+    github.com/project-slug: autodesignlab/.github
+    backstage.io/source-location: url:https://github.com/autodesignlab/.github
+    governance/level: G2
+    governance.ema/commercial-readiness: Ready
+    governance.ema/license-risk: Low
+    governance.ema/release-version: v1.0.0
+spec:
+  type: documentation
+  lifecycle: active
+  owner: governance-team
+  system: governance-system
+  domain: governance
