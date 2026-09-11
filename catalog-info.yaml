@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: .github
+  name: org-profile
   title: Organization Public Profile
   description: Public organization profile page and website directory
   annotations:
