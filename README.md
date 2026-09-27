@@ -1,53 +1,22 @@
-# .github
+# AutoDesignLab (.github)
 
-`autodesignlab` Organization 的**公開** Profile Repository。
+本 Repository 為 `autodesignlab` Organization 的公開 Profile 與設定倉儲.
 
-GitHub 規定：Organization 的公開首頁內容必須放在名為 `.github` 的 **public** repository 的 `profile/README.md`。因此本 repo 必須維持 public，但**不放任何產品程式碼**。
+GitHub 規範中, 組織的公開首頁內容由 `.github` 倉儲中的 `profile/README.md` 提供. 因此本倉儲作為組織對外公開呈現的主頁來源與公共入口.
 
-## 目錄結構
+## 倉儲內容
 
-```
-.github/
-├─ profile/
-│  └─ README.md   ← GitHub 顯示在 Organization 首頁的 Public View
-├─ catalog-info.yaml
-├─ .governance/
-│  └─ governance.yaml
-└─ .github/
-   └─ CODEOWNERS
-```
+- `profile/README.md`: GitHub 組織公開首頁展示內容 (Public Organization Profile)
+- `catalog-info.yaml`: 組織服務與元件元資料定義
 
-## 與 `.github-private` 的分工
+## 官方資源與站點
 
-| Repository | 可見性 | 顯示對象 | 定位 |
-| --- | --- | --- | --- |
-| `.github`（本 repo） | **public** | 外部訪客（Public View） | **Website Directory** — 介紹官方站與各知識型站點 |
-| [`.github-private`](https://github.com/autodesignlab/.github-private) | private | 組織成員（Member View） | **Engineering Portal** — 治理、平台、開發流程導覽 |
+- **官方網站**: [AutoDesignLab](https://www.autodesignlab.org/zh/)
+- **建築維基**: [ArkiWiki](https://arkiwiki.autodesignlab.org/)
+- **日麻教學**: [StatMahjong](https://statmahjong.autodesignlab.org/)
+- **MIDI 鋼琴**: [Piano Flow](https://pianomidi.autodesignlab.org/)
 
-兩者內容刻意不同：對外呈現產品與研究，對內呈現工程入口。
+## 授權與社群規範
 
-## 內容規則
+本倉儲內容為對外公開資訊. 如有專案合作或建議, 請透過官方網站聯繫.
 
-本 repo 是 public，寫入前務必確認：
-
-- ❌ 不放 Tailscale hostname 或任何 Tailnet 內部網域
-- ❌ 不放內部 IP、叢集資訊、Infisical 路徑
-- ❌ 不放內部工具與管理後台連結（Developer Portal、CD、叢集管理、監控、遠端開發環境等）
-- ❌ 不放治理規範細節（那些屬於 `org-governance`，且為 private）
-- ✅ 只放 `*.autodesignlab.org` 的公開站點與公開社群連結
-
-## Pinned Repository
-
-組織內所有產品 Repository 目前皆為 private。GitHub 不會對外部訪客顯示釘選的 private repository，因此公開首頁**不依賴 Pinned Repository**，導覽完全由 `profile/README.md` 的網站連結承擔。
-
-## 治理
-
-| 項目 | 值 |
-| --- | --- |
-| Type | `docs` |
-| Domain | `governance` |
-| Governance Level | G2 → 目標 G3 |
-| Risk Tier | T2 |
-| Branch Profile | `standard`（`main` 走 PR） |
-
-正式規範以 [`org-governance`](https://github.com/autodesignlab/org-governance) 為 Single Source of Truth。
